@@ -28,3 +28,5 @@ defined('MOODLE_INTERNAL') || die();
 $plugin->version   = 2017081000;        // The current plugin version (Date: YYYYMMDDXX).
 $plugin->requires  = 2016052300;        // Requires this Moodle version.
 $plugin->component = 'block_kuracloud'; // Full name of the plugin (used for diagnostics).
+$plugin->maturity = MATURITY_RC;
+$plugin->release = 'v1.0';
