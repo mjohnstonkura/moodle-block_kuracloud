@@ -31,9 +31,17 @@ defined('MOODLE_INTERNAL') || die();
 
 /**
  * kuraCloud API abstraction
+ *
+ * @copyright 2017 Catalyst IT
+ * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class api {
 
+    /**
+     * Transport object
+     *
+     * @var transport
+     */
     private $transport;
 
     /**
@@ -363,7 +371,7 @@ class api {
      * Do a PUT requests to the API
      *
      * @param string $url of the API
-     * @param stdClass Parameters to pass to the api
+     * @param stdClass $params Parameters to pass to the api
      * @throws \Exception From API, transport or unknown source
      * @return stdClass|array
      */
@@ -394,7 +402,7 @@ class api {
      * Do a PUT requests to the API
      *
      * @param string $url of the API
-     * @param stdClass Parameters to pass to the api
+     * @param stdClass $params Parameters to pass to the api
      * @param boolean $expectresponse Does the api return a JSON
      * @throws \Exception From API, transport or unknown source
      * @return stdClass|array

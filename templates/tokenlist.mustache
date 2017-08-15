@@ -15,6 +15,8 @@
     along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 }}
 {{!
+    @template block_kuracloud/tokenlist
+
     Current API Tokens.
 
     Classes required for JS:
@@ -36,8 +38,6 @@
             <th scope="col">{{#str}}lmsenabled, block_kuracloud{{/str}}</th>
             <th scope="col">{{#str}}actions, block_kuracloud{{/str}}</th>
         </tr>
-        </tr>
-    </thead>
     </thead>
     <tbody>
         {{#tokens}}
@@ -52,5 +52,5 @@
         {{/tokens}}
     </tbody>
 </table>
-<a href="addendpoint.php">{{#str}}addnewendpoint, block_kuracloud{{/str}}
+<a href="addendpoint.php">{{#str}}addnewendpoint, block_kuracloud{{/str}}</a>
 </div>

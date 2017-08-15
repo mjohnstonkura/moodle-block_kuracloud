@@ -29,6 +29,12 @@ defined('MOODLE_INTERNAL') || die();
 
 require_once($CFG->libdir.'/filelib.php');
 
+/**
+ * kuraCurl backports some curl functionality from Moodle 3.3
+ *
+ * @copyright  2017 Catalyst IT
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
 class kuraCurl extends \Curl {
 
     /**

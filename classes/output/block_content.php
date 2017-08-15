@@ -40,7 +40,13 @@ use stdClass;
  */
 class block_content implements renderable, templatable {
 
+    /**
+     * List of api endpoints/tokens
+     *
+     * @var array
+     */
     private $tokens;
+
     /**
      * Constructor
      *

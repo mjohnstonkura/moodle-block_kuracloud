@@ -42,11 +42,42 @@ define("MAX_LIST_SIZE", 10);
  */
 class syncusers implements renderable, templatable {
 
+    /**
+     * Users to be deleted
+     *
+     * @var array
+     */
     private $todelete;
+
+    /**
+     * Users to be restored
+     *
+     * @var array
+     */
     private $torestore;
+
+    /**
+     * Users to be updated
+     *
+     * @var array
+     */
     private $toupdate;
+
+    /**
+     * Users to be added
+     *
+     * @var array
+     */
     private $toadd;
 
+    /**
+     * Constructor
+     *
+     * @param array $toadd Names of users to be added
+     * @param array $toupdate Names of users to be updated
+     * @param array $todelete Names of users to be deleted
+     * @param array $torestore Names of users to be restored
+     */
     public function __construct($toadd, $toupdate, $todelete, $torestore) {
         $this->todelete = $todelete;
         $this->torestore = $torestore;

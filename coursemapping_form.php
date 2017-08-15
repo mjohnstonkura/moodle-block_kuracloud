@@ -31,6 +31,9 @@ require_once("$CFG->libdir/formslib.php");
 
 /**
  * Course mapping search form
+ *
+ * @copyright 2017 Catalyst IT
+ * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class coursemapping_form extends \moodleform {
 
