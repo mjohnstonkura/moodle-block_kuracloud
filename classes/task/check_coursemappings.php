@@ -29,6 +29,9 @@ defined('MOODLE_INTERNAL') || die();
 
 /**
  * Cron task to check the state of the kuraCloud API connection
+ *
+ * @copyright 2017 Catalyst IT
+ * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class check_coursemappings extends \core\task\scheduled_task {
 

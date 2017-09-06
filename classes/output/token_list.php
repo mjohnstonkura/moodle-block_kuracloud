@@ -41,8 +41,18 @@ use stdClass;
  */
 class token_list implements renderable, templatable {
 
+    /**
+     * List of tokens/api endpoints
+     *
+     * @var array
+     */
     private $tokens;
 
+    /**
+     * Constructor
+     *
+     * @param array $tokens to be displayed
+     */
     public function __construct($tokens) {
         $this->tokens = $tokens;
     }

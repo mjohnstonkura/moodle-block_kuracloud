@@ -29,11 +29,31 @@ defined('MOODLE_INTERNAL') || die();
 
 /**
  * A kuraCloud API endpoint
+ *
+ * @copyright 2017 Catalyst IT
+ * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class endpoint {
 
+    /**
+     * API object
+     *
+     * @var api
+     */
     public $api;
+
+    /**
+     * Name of endpoint
+     *
+     * @var string
+     */
     public $name;
+
+    /**
+     * InstanceID of the endpoint
+     *
+     * @var string
+     */
     public $instanceid;
 
     /**

@@ -32,18 +32,61 @@ defined('MOODLE_INTERNAL') || die();
  * Interface to API transport
  */
 interface apitransport {
+
+    /**
+     * Do an HTTP GET
+     *
+     * @param string $url
+     * @return string
+     */
     public function get($url);
+
+    /**
+     * Do an HTTP PUT
+     *
+     * @param string $url
+     * @param array $params
+     * @return string
+     */
     public function put($url, $params);
+
+    /**
+     * Do an HTTP POST
+     *
+     * @param string $url
+     * @param array $params
+     * @return string
+     */
     public function post($url, $params);
 }
 
 /**
  * API transport class
+ *
+ * @copyright 2017 Catalyst IT
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class transport implements apitransport {
 
+    /**
+     * URL of API endpoint
+     *
+     * @var string
+     */
     private $endpointurl;
+
+    /**
+     * API authentication token
+     *
+     * @var string;
+     */
     private $token;
+
+    /**
+     * Content mime type of API payload
+     *
+     * @var string
+     */
     private $contenttype;
 
     /**

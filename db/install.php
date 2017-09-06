@@ -24,6 +24,11 @@
  */
 defined('MOODLE_INTERNAL') || die();
 
+/**
+ * Generate encryption keys on plugin install.
+ *
+ * @return void
+ */
 function xmldb_block_kuracloud_install() {
 
     // Generate encryption key.
