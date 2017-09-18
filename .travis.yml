@@ -18,16 +18,18 @@ cache:
     - $HOME/.npm
 
 php:
- # - 5.6
- # - 7.0
- - 7.1
+  # - 5.6
+  # - 7.0
+  - 7.1
 
 env:
- global:
-  - MOODLE_BRANCH=MOODLE_32_STABLE
- matrix:
-  # - DB=pgsql
-  - DB=mysqli
+  global:
+    # - MOODLE_BRANCH=MOODLE_31_STABLE
+    # - MOODLE_BRANCH=MOODLE_32_STABLE
+    - MOODLE_BRANCH=MOODLE_33_STABLE
+  matrix:
+    # - DB=pgsql
+    - DB=mysqli
 
 before_install:
   - phpenv config-rm xdebug.ini
