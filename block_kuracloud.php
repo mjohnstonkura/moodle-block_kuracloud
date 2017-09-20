@@ -49,6 +49,10 @@ class block_kuracloud extends block_base {
      * @return string|boolean
      */
     public function get_content() {
+        // Moodle calls get_content several times for each block, so just compute once.
+        if ($this->content !== null) {
+            return $this->content;
+        }
 
         global $COURSE, $PAGE;
 
