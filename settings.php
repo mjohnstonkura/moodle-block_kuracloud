@@ -29,7 +29,5 @@ defined('MOODLE_INTERNAL') || die();
 $ADMIN->add('blocksettings', new admin_externalpage('kuracloudconfig', get_string('pluginname', 'block_kuracloud'),
         "$CFG->wwwroot/blocks/kuracloud/manageendpoints.php", 'block/kuracloud:configureapi'));
 
-if ($ADMIN->fulltree) {
-    // No report settings.
-    $settings = null;
-}
+ // No report settings.
+ $settings = null;
