@@ -1,5 +1,4 @@
 # https://moodlerooms.github.io/moodle-plugin-ci/TravisFileExplained.html
-# Bump for travis build
 
 language: php
 
@@ -42,7 +41,7 @@ install:
 
 script:
   - moodle-plugin-ci phplint
-  # PHP Copy/Paste Detector. 
+  # PHP Copy/Paste Detector.
   # Detects some duplicated code in api.php. Disabling test until ready to refactor.
   # - moodle-plugin-ci phpcpd
   # PHP Mess Detector
